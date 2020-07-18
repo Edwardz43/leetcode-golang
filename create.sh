@@ -10,5 +10,6 @@ do
 done
 
 mkdir ${FILENAME} && mkdir ${FILENAME}/solution
-cp ./solution_template ${FILENAME}/solution/solution.go
-cp ./solution_test_template ${FILENAME}/solution/solution_test.go
+cp ./template/solution_template ${FILENAME}/solution/solution.go
+cp ./template/solution_test_template ${FILENAME}/solution/solution_test.go
+cp ./template/READ.md ${FILENAME}/READ.md
