@@ -4,6 +4,6 @@ import (
 	"testing"
 )
 
-func TestSlution01(t *testing.T) {
+func TestSolution01(t *testing.T) {
 	//TODO
 }
