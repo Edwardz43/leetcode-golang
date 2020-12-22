@@ -25,3 +25,14 @@ func MaxProduct(nums []int) int {
 
 	return (max1 - 1) * (max2 - 1)
 }
+
+type ss struct {
+	a string
+	b int
+	c bool
+}
+
+//
+func newSs(a string, b int, c bool) *ss {
+	return &ss{a: a, b: b, c: c}
+}

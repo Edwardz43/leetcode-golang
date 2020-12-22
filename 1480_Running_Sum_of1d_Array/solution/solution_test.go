@@ -31,10 +31,10 @@ func TestRunningSum01(t *testing.T) {
 
 func TestRunningSum02(t *testing.T) {
 	input := []int{1, 1, 1, 1, 1}
-	expexted := []int{1, 2, 3, 4, 5}
+	expected := []int{1, 2, 3, 4, 5}
 	output := solution.RunningSum(input)
 
-	assert.Equal(t, expexted, output)
+	assert.Equal(t, expected, output)
 }
 
 func TestRunningSum03(t *testing.T) {
