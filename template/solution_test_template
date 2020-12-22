@@ -5,5 +5,8 @@ import (
 )
 
 func TestSolution01(t *testing.T) {
-	//TODO
+	//input := 
+	//expected := 
+	//output := solution.function(input)
+	//assert.Equal(t, expected, output)
 }
