@@ -1,7 +1,7 @@
 package solution
 
 /*
-Runtime: 8 ms, faster than 61.46% of Go online submissions for Roman to Integer.
+Runtime: 4 ms, faster than 89.93% of Go online submissions for Roman to Integer.
 Memory Usage: 3.1 MB, less than 100.00% of Go online submissions for Roman to Integer.
 */
 
@@ -16,8 +16,7 @@ func RomanToInt(s string) int {
 	// M [77]
 	res := 0
 	for b := range s {
-		cursor := s[b]
-		switch cursor {
+		switch s[b] {
 		case 73:
 			res++
 			break
