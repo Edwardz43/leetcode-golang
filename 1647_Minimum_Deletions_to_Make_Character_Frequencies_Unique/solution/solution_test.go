@@ -35,9 +35,20 @@ func Test_minDeletions(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := minDeletions(tt.args.s); got != tt.want {
+			if got := minDeletionsV2(tt.args.s); got != tt.want {
 				t.Errorf("minDeletions() = %v, want %v", got, tt.want)
 			}
 		})
+	}
+}
+
+func BenchmarkMinDeletions(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		minDeletions("ceabaacb")
+	}
+}
+func BenchmarkMinDeletionsV2(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		minDeletionsV2("ceabaacb")
 	}
 }
